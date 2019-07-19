@@ -1,11 +1,13 @@
 provider "github" {
-  organization = "perlreview"
-}
+	version      = "~> 2.2"
+
+	organization = var.github_org
+	}
 
 resource "github_repository" "repo" {
-	name          = "grammarbot-perl"
-	description   = "Interact with the Grammarbot API through Perl"
-	homepage_url  = "https://www.metacpan.org/pod/GrammarBot"
+	name          = var.repo_name
+	description   = var.description
+	homepage_url  = var.metacpan_url
 	has_downloads = false
 	has_issues    = true
 	has_projects  = false
@@ -19,9 +21,9 @@ resource "github_repository" "repo" {
 
 	private = false
 
-	topics = [
-		"perl",
-		"grammar",
-		"grammarbot"
-		]
+	topics = var.tags
+	}
+
+output github_push_url {
+	value = github_repository.repo.ssh_clone_url
 	}
