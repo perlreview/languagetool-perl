@@ -2,6 +2,14 @@
 
 =encoding utf8
 
+=for HTML <a href='https://ci.appveyor.com/project/briandfoy/grammarbot'><img src='https://ci.appveyor.com/api/projects/status/a?svg=true' /></a>
+
+=for HTML <a href='https://coveralls.io/github/briandfoy/grammarbot?branch=master'><img src='https://coveralls.io/repos/github/briandfoy/grammarbot/badge.svg?branch=master' alt='Coverage Status' /></a>
+
+=for HTML <a href="https://github.com/briandfoy/grammarbot/blob/master/LICENSE"><img src="https://img.shields.io/cpan/l/grammarbot.svg" /></a>
+
+=for HTML <a href="https://metacpan.org/pod/GrammarBot"><img src="https://img.shields.io/cpan/v/grammarbot.svg" /></A>
+
 =head1 The GrammarBot module
 
 This is the I<README> for the L<GrammarBot> Perl module.
