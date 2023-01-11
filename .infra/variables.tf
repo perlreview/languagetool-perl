@@ -1,21 +1,21 @@
 variable "module_name" {
 	type    = string
-	default = "GrammarBot"
+	default = "LanguageTool"
 	}
 
 variable "repo_name" {
 	type    = string
-	default = "grammarbot-perl"
+	default = "languagetool-perl"
 	}
 
 variable "description" {
 	type = string
-	default = "Interact with the GrammarBot.io API through Perl"
+	default = "Interact with the LanguageTool API from Perl"
 	}
 
 variable "metacpan_url" {
 	type = string
-	default = "https://www.metacpan.org/pod/GrammarBot"
+	default = "https://www.metacpan.org/pod/LanguageTool"
 	}
 
 variable tags {
@@ -23,7 +23,8 @@ variable tags {
 	default = [
 		"perl",
 		"grammar",
-		"grammarbot"
+		"languagetool",
+		"spellchecking"
 		]
 	}
 

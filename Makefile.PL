@@ -1,4 +1,4 @@
-package GrammarBot;
+package LanguageTool;
 use strict;
 use warnings;
 
@@ -40,7 +40,7 @@ use File::Spec::Functions qw(catfile);
 my $module    = __PACKAGE__;
 ( my $dist = $module ) =~ s/::/-/g;
 
-my $github    = 'https://github.com/briandfoy/grammarbot-perl';
+my $github    = 'https://github.com/briandfoy/languagetool-perl';
 my $main_file = catfile( 'lib', split /::/, "$module.pm" );
 
 my %WriteMakefile = (
@@ -61,11 +61,12 @@ my %WriteMakefile = (
 		},
 
 	'TEST_REQUIRES' => {
-		'Test::More' => '0.95',
+		'Test::More' => '1',
 		},
 
 	'PREREQ_PM' => {
-		'Carp' => '0',
+		'Carp'           => '0',
+		'Hash::AsObject' => '0',
 		},
 
 	'META_MERGE' => {
@@ -73,7 +74,7 @@ my %WriteMakefile = (
 		resources => {
 			repository => {
 				type => 'git',
-				url  => "$github.git",
+				url  => $github,
 				web  => $github,
 				},
 			bugtracker => {

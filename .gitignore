@@ -6,4 +6,8 @@ blib
 pm_to_blib
 .infra/.terraform
 .infra/terraform.tfstate.backup
-.infra/.terraform
+*.icloud
+
+MANIFEST*[123456789]
+Changes*[123456789]
+
